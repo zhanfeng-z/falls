@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="falls.js"></script>
+		<style type="text/css">
+			html,body{height:100%}
+			body{
+				margin: 0;
+				padding: 0;
+			}
+			#container{
+				position: relative;
+				margin: 0 auto;
+			}
+			#container img{
+				float: left;
+				width: 290px;
+				height: auto;
+				padding: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="containers">
+			<img src="img/1.jpg" alt="" />
+			<img src="img/2.jpg" alt="" />
+			<img src="img/3.jpg" alt="" />
+			<img src="img/4.jpg" alt="" />
+			<img src="img/5.jpg" alt="" />
+			<img src="img/6.jpg" alt="" />
+			<img src="img/7.jpg" alt="" />
+			<img src="img/8.jpg" alt="" />
+			<img src="img/9.jpg" alt="" />
+			<img src="img/10.jpg" alt="" />
+			<img src="img/11.jpg" alt="" />
+			<img src="img/12.jpg" alt="" />
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.onload = function(){
+			falls.init({});
+		}
+		function loadmore(){
+			var array = [];
+			for(var i = 1;i < 13;i++){
+				var imgUrl = "img/"+i+".jpg";
+				array.push(imgUrl);
+			}
+			falls.addImg(array);
+		}
+	</script>
+</html>
