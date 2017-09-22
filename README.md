@@ -1,4 +1,6 @@
 # falls
+一个原生js实现的瀑布流js插件
+
 falls.init(option)  //初始化插件
 
 loadmore //滚轮到底调用的function 
